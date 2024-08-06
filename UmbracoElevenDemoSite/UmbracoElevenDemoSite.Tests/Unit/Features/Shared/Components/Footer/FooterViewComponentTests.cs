@@ -23,7 +23,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Shared.Components.Footer
 
         [Test]
         [TestCase("header")]
-        [TestCase("heading")]        
+        [TestCase("heading")]
         public void Given_SiteSettingsHasCallToActionHeader_When_Invoke_Then_ReturnViewModelWithCallToActionHeader(string expected)
         {
             this.siteSettings.Setup(x => x.CallToActionHeader).Returns(expected);
@@ -44,7 +44,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Shared.Components.Footer
 
             Assert.AreEqual(expected, model.CallToActionDescription);
         }
-         
+
         [Test]
         [TestCase("button")]
         [TestCase("label")]

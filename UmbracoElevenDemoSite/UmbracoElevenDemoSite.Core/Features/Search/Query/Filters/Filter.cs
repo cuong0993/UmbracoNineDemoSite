@@ -9,7 +9,7 @@ namespace UmbracoElevenDemoSite.Core.Features.Search.Query.Filters
     {
         public static IBooleanOperation FilterByAlias(this IQuery query, string[] aliases)
         {
-            var fields = new[] {SearchField.NodeTypeAlias, "type"};
+            var fields = new[] { SearchField.NodeTypeAlias, "type" };
             if (aliases?.Any() == true)
             {
                 return query.GroupedOr(fields, aliases);

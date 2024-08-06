@@ -27,7 +27,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Shared.Components.ContactFor
         public void SetUp()
         {
             this.tempData = new Mock<ITempDataDictionary>();
-            this.umbracoContextAccessor = new Mock<IUmbracoContextAccessor>();            
+            this.umbracoContextAccessor = new Mock<IUmbracoContextAccessor>();
             this.controller = new ContactFormController(this.umbracoContextAccessor.Object, Mock.Of<IUmbracoDatabaseFactory>(), ServiceContext.CreatePartial(), AppCaches.NoCache, Mock.Of<IProfilingLogger>(), Mock.Of<IPublishedUrlProvider>())
             {
                 TempData = this.tempData.Object

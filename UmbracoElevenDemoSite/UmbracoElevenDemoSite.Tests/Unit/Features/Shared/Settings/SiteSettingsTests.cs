@@ -90,7 +90,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Shared.Settings
             Assert.AreEqual(callToActionHeader, result);
         }
 
-       
+
         [Test]
         [TestCase("Call To Action Description")]
         [TestCase("Description for the Umbraco 9 Demo")]

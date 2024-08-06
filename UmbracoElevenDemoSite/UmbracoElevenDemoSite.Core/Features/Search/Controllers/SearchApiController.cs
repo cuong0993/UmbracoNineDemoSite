@@ -16,7 +16,7 @@ namespace UmbracoElevenDemoSite.Core.Features.Search.Controllers
         }
         public SearchResults Search(string searchTerm, int skip, int take)
         {
-            var criteria = new BaseSearchCriteria { SearchTerm = searchTerm, Skip = skip, Take = take};
+            var criteria = new BaseSearchCriteria { SearchTerm = searchTerm, Skip = skip, Take = take };
             var results = _searchService.Search(criteria);
 
             return results;

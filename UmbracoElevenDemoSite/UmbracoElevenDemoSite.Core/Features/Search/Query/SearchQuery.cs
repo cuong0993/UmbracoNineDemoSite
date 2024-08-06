@@ -16,7 +16,7 @@ namespace UmbracoElevenDemoSite.Core.Features.Search.Query
         {
             var query = _searcher.CreateQuery("content");
 
-            var filter = query.FilterByAlias(new[] { generatedModels.Page.ModelTypeAlias, generatedModels.Home.ModelTypeAlias})
+            var filter = query.FilterByAlias(new[] { generatedModels.Page.ModelTypeAlias, generatedModels.Home.ModelTypeAlias })
                 .SearchByTerm(searchCriteria.SearchTerm);
 
             return filter;

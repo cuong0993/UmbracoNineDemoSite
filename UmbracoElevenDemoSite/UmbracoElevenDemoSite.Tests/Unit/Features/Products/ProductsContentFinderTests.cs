@@ -55,11 +55,11 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Products
             string rootPath, string productId, string productName)
         {
             SetupAndCallTRyFindContent(
-                rootPath, 
-                productId, 
-                productName, 
-                out IPublishedContent? dummyContent, 
-                out bool result, 
+                rootPath,
+                productId,
+                productName,
+                out IPublishedContent? dummyContent,
+                out bool result,
                 out Mock<ProductsContainer>? productsContainer);
 
             #region check result of method call

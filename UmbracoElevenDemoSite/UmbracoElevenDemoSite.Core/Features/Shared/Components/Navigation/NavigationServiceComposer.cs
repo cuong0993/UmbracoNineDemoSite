@@ -6,7 +6,7 @@ using UmbracoElevenDemoSite.Core.Features.Shared.Components.Navigation;
 namespace UmbracoElevenDemoSite.Core.Features.Shared.Settings
 {
     public class NavigationServiceComposer : IComposer
-	{
+    {
         public void Compose(IUmbracoBuilder builder)
         {
             builder.Services.AddScoped<INavigationService, NavigationService>();

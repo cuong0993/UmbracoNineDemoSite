@@ -27,6 +27,6 @@ namespace UmbracoElevenDemoSite.Core.Features.Products
 
         public string Heading { get; set; }
         public override string PageTitle => this.Name;
-		public override string PageDescription { get; set; }
+        public override string PageDescription { get; set; }
     }
 }

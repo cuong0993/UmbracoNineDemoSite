@@ -50,7 +50,7 @@ namespace UmbracoElevenDemoSite.Core.Features.Search.Services
 
             return GetProductsSearchResults(searchResults, criteria.SearchTerm);
         }
-         private SearchResults GetProductsSearchResults(ISearchResults searchResults, string searchTerm)
+        private SearchResults GetProductsSearchResults(ISearchResults searchResults, string searchTerm)
         {
             if (searchResults == null) return null;
 

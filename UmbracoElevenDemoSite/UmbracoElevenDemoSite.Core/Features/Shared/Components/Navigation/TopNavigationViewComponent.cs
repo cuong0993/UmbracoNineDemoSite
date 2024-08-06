@@ -18,7 +18,7 @@ namespace UmbracoElevenDemoSite.Core.Features.Shared.Components.Navigation
             {
                 Selected = selected,
                 Items = this.navigationService.GetTopNavigation()
-        });
+            });
         }
     }
 }

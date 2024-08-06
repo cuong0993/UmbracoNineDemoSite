@@ -85,7 +85,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Shared.Components.Navigation
             contentCache = new Mock<IPublishedContentCache>();
             contentCache.Setup(s => s.GetAtRoot(null))
                 .Returns(pages);
-            
+
             var umbracoContext = new Mock<IUmbracoContext>();
             umbracoContext.Setup(s => s.Content)
                 .Returns(contentCache.Object);

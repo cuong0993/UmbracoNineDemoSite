@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace UmbracoElevenDemoSite.Tests.Extensions
 {
-	public static class StringExtensions
-	{
+    public static class StringExtensions
+    {
         public static string ToCamelCase(this string s)
         {
             if (string.IsNullOrWhiteSpace(s))

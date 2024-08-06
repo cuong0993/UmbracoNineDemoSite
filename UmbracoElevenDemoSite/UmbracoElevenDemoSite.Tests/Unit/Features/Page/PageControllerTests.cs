@@ -39,7 +39,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Page
         [TestCase("Heading")]
         [TestCase("Other heading")]
         public void Given_PublishedContentHasHeading_When_PageAction_Then_ReturnViewModelWithHeading(string heading)
-        {            
+        {
             publishedContent.SetupPropertyValue(PropertyAlias.Heading, heading);
             var contentModel = new ContentModel(publishedContent.Object);
 
@@ -53,7 +53,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Page
         [TestCase("Other BodyText")]
         public void Given_PublishedContentHasBodyText_When_PageAction_Then_ReturnViewModelWithBodyText(string bodyText)
         {
-            var bodyTextEncodedHtml = new HtmlEncodedString(bodyText);            
+            var bodyTextEncodedHtml = new HtmlEncodedString(bodyText);
             publishedContent.SetupPropertyValue(PropertyAlias.BodyText, bodyTextEncodedHtml);
             var contentModel = new ContentModel(publishedContent.Object);
 
@@ -65,7 +65,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Page
         [Test]
         public void Given_PublishedContentHasBlocks_When_PageAction_Then_ReturnViewModelWithBlocks()
         {
-            var blockList = new BlockListModel(new List<BlockListItem>());            
+            var blockList = new BlockListModel(new List<BlockListItem>());
             publishedContent.SetupPropertyValue(PropertyAlias.Blocks, blockList);
             var contentModel = new ContentModel(publishedContent.Object);
 

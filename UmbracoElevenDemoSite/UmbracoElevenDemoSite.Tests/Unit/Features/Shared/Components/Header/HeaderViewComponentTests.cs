@@ -21,7 +21,7 @@ namespace UmbracoElevenDemoSite.Tests.Unit.Features.Shared.Components.Footer
 
         [Test]
         [TestCase("siteName")]
-        [TestCase("Umbraco 9 Demo")]        
+        [TestCase("Umbraco 9 Demo")]
         public void Given_SiteSettingsHasSiteName_When_Invoke_Then_ReturnViewModelWithHeading(string siteName)
         {
             this.siteSettings.Setup(x => x.SiteName).Returns(siteName);

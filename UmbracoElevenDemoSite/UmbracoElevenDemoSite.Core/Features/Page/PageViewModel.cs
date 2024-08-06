@@ -4,14 +4,14 @@ using UmbracoElevenDemoSite.Core.Features.Shared.Content;
 
 namespace UmbracoElevenDemoSite.Core.Features.Page
 {
-	public class PageViewModel : SitePageBase, IHeadingPage
-	{
-		public PageViewModel() : base() { }
+    public class PageViewModel : SitePageBase, IHeadingPage
+    {
+        public PageViewModel() : base() { }
 
-		public string Heading { get; set; }
+        public string Heading { get; set; }
 
-		public IHtmlEncodedString BodyText { get; set; }
+        public IHtmlEncodedString BodyText { get; set; }
 
-		public BlockListModel Blocks { get; set; }
-	}
+        public BlockListModel Blocks { get; set; }
+    }
 }

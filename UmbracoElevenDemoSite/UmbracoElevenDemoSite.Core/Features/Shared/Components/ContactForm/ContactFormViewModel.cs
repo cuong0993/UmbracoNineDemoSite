@@ -14,6 +14,6 @@ namespace UmbracoElevenDemoSite.Core.Features.Shared.Components.ContactForm
             this.Subject = block.Settings.Value<string>(nameof(ContactFormSettings.Subject).ToFirstLower());
         }
 
-        public string Heading => this.block.Content.Value<string>(nameof(generatedModels.Page.Heading).ToFirstLower());        
+        public string Heading => this.block.Content.Value<string>(nameof(generatedModels.Page.Heading).ToFirstLower());
     }
 }
